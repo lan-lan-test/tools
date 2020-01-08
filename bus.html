@@ -76,9 +76,6 @@
         $.ajax({
           type: 'GET',
           url: 'https://aisle.amap.com/ws/mapapi/realtimebus/linestation?key=59f783b90e9cb4aaa352b66da1a8d358&need_bus_status=1&lines=' + obj.lines + '&stations=' + obj.stations + '&uid=' + Math.floor(Math.random() * 2088402708857800), 
-          headers: {
-             Referer: '127.0.0.1',
-          },
           success: function(data) {
             obj.data = data.buses;
           },
